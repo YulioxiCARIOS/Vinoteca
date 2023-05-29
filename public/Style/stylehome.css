@@ -163,7 +163,7 @@ p {
     align-items: center;
     text-align: center;
      /* border: 1px solid rgb(172, 28, 28);  */
-    background-image:url(../Img/Diseño/AccesoriosUno.webp) ; 
+    background-image:url(https://firebasestorage.googleapis.com/v0/b/vinoteca-2dc45.appspot.com/o/Dise%C3%B1o%2FAccesoriosUno.webp?alt=media&token=0ef4d319-cc2b-450c-9755-05757f151c05) ; 
     background-size: cover;
     margin-left: 63.7vw;
 }
@@ -179,7 +179,7 @@ p {
     text-align: center;
     margin-left: 27vw;
     /* border: 1px solid rgb(78, 28, 172);  */
-    background-image:url(../Img/Diseño/Delicateses.webp); 
+    background-image:url(https://firebasestorage.googleapis.com/v0/b/vinoteca-2dc45.appspot.com/o/Dise%C3%B1o%2FDelicateses.webp?alt=media&token=c99e4314-2533-4a64-aa6c-b32339061ad8); 
     background-size: cover;
 }
 
@@ -247,7 +247,7 @@ cursor: pointer;
     align-items: center;
     text-align: center;
     /* border: 1px solid rgb(78, 28, 172);  */
-    background-image: url(../Img/Diseño/CervezaEspumante.jpg); 
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/vinoteca-2dc45.appspot.com/o/Dise%C3%B1o%2FCervezaEspumante.jpg?alt=media&token=cf052688-1d78-41f3-97d6-5023329e842c); 
     background-size: cover;
 
 }
