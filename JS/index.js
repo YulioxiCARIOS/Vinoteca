@@ -9,7 +9,6 @@ var portada = document.getElementById("portada")
 var carousel = document.getElementById("carousel")
 let dataVinos = [];
 let vinos
-let arrayAFiltrar = []
 var todosLosVinos = [];
 var vinosBlancos = [];
 var vinosTintos = [];
@@ -301,15 +300,16 @@ function imprimirPortada() {
 
 var inputSearch = document.getElementById("inputSearch")
 
-inputSearch.addEventListener("keyup", function (evento) { capturaEvento(evento) })
+inputSearch.addEventListener("keyup", function(vino) { capturaVino(vino) })
 
-function capturaEvento(evento) {
-    var datoInput = evento.target.value
-    // var datoSinEspacio = datoInput.trim().toLowerCase()
+function capturaVino(vino) {
+    var datoInput = vino.target.value
+    
     var search = datoInput.trim().toLowerCase()
-
-    //console.log(datoSinEspacio)
-    var filtrado = arrayAFiltrar.filter(evento => evento.name.toLowerCase().includes(search))
+ 
+   //console.log(datoInput)
+    var filtrado = vinos.filter(vino  => vino.Nombre.toLowerCase().includes(search))
+    //console.log(filtrado)
     if (filtrado.length === 0) {
         nombreEventos.innerHTML = `<h1 class="ceroResult" >No se encontraron Vinos para tu busqueda </h1>`
     }
