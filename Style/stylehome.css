@@ -1,0 +1,540 @@
+/* -----Normalización----- */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+/* -----NavBar----- */
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+
+
+}
+
+.logo {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    border: 1px black solid;
+
+}
+
+
+.busq {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(#350505b2,#35050593,#35050588,#3505056b) ;
+    margin-bottom: 5vh;
+}
+
+.busqued {
+    width: 25%;
+    height: 4vh;
+    position: absolute;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 1vw;
+
+}
+
+img {
+    height: 5vh;
+
+}
+
+nav ul {
+    width: 100%;
+    position: absolute;
+    height: 10vh;
+    background:linear-gradient(#350505,#350505de,#350505ce,#350505b2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 4vw;
+    font-weight: bold;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d6c5cd;
+
+
+}
+
+li {
+    list-style-type: none;
+}
+
+li a:hover {
+    background-color: #d903678c;
+    font-style: italic;
+}
+
+/* -----Segunda Barra----- */
+
+.segundaNav {
+    width: 100vw;
+    height: 25vh;
+    /* background-image: url(../fondo/fondo3.jpeg);
+    background-size:auto;
+    background-position: center; */
+    /* background-color: #4C4649; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+
+    font-size: 30px;
+
+}
+
+p {
+    text-decoration: none;
+    color: #000;
+    font-size: 45px;
+    /* font-family: 'Syne Mono', monospace; */
+}
+
+.segundaNav a:hover {
+    background-color: #4903248c;
+    font-style: italic;
+
+}
+
+/* ----- Checkbox----- Y  -----Busqueda----- */
+
+.category-busqueda {
+    width: 98%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding-left: 2vw; */
+    /* background-color: #e9b3b3; */
+
+}
+
+/* -------Nuevo Diseño--------- */
+.inicio {
+    width: 90vw;
+    height: 60vh;
+    /* border: 1px solid black;  */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-size: cover;
+    margin-bottom: 5vh;
+    margin-left: 6vw;
+
+
+}
+
+.unoInicio {
+    width: 29%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+     /* border: 1px solid rgb(172, 28, 28);  */
+    background-image:url(../Img/Diseño/AccesoriosUno.webp) ; 
+    background-size: cover;
+    margin-left: 63.7vw;
+}
+
+.dosInicio {
+    width: 38%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 27vw;
+    /* border: 1px solid rgb(78, 28, 172);  */
+    background-image:url(../Img/Diseño/Delicateses.webp); 
+    background-size: cover;
+}
+
+
+.blancos,
+.tintos,
+.espumantes {
+    width: 16vw;
+    height: 16vh;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    background-color: #4c4649c2;
+    border-radius: 1vw;
+    font-family: monospace;
+    color: white;
+
+}
+
+.dosInicio:hover {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+
+}
+
+.unoInicio:hover {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+
+}
+
+.derecha:hover {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+
+}
+.tintos:hover {
+cursor: pointer;
+
+}
+.blancos:hover {
+    cursor: pointer;
+    
+}
+.espumantes:hover {
+
+    cursor: pointer;
+}
+.logoVino {
+    width: 10vw;
+    height: 10vh;
+}
+
+.derecha {
+    width: 28%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid rgb(78, 28, 172);  */
+    background-image: url(../Img/Diseño/CervezaEspumante.jpg); 
+    background-size: cover;
+
+}
+
+/* -----Tarjetas----- */
+
+#todosLosEventos {
+
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #e9b3b3; */
+    column-gap: 5vh;
+    row-gap: 5vw;
+
+}
+
+.uno {
+    display: contents;
+   
+    
+
+
+}
+
+.cards {
+    width: 22vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    margin: 5px; 
+   
+}
+
+.cards:hover {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+    box-shadow: 0px 0px 3px 3px #413239bd ;
+    border: 1px solid black;
+    
+}
+
+.cardUno {
+    width: 18vw;
+   
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #eee9eb; */
+    /* padding: 20px; */
+    border-radius: 20px;
+}
+
+.img {
+    width: 20vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imagenUno {
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
+.title {
+
+    height: vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Syne Mono', monospace;
+    font-weight: bold;
+    margin-top: 3vh;
+
+
+
+}
+
+.descrip {
+    height: 30vh;
+    font-size: 14px;
+    text-align: left;
+    
+
+
+}
+
+.price {
+
+    width: 18vw;
+    height: 5vh;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.price-ver {
+    width: 18vw;
+}
+
+.verMas {
+    width: 20vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.but {
+width: 15vw;
+height: 4vh;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align: center;
+    box-shadow: -2px -2px 3px 3px rgba(10, 0, 1, 0.019);
+    background-color: #000;
+}
+
+
+.but a {
+
+   text-decoration: none;
+   color: #fdfbfb;
+   
+  
+
+}
+
+/*-----Footer----- */
+
+footer {
+    font-family: monospace;
+    font-size: 4px;
+    border-top: 1px solid black;
+    width: 90vw;
+    height: 40vh;
+    /* background-color: rgba(61, 7, 7, 0.438); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 4%;
+    margin-top: 5vh;
+}
+
+h4 {
+    padding-bottom: 2vh !important;
+}
+
+h3 {
+    font-size: 15px !important;
+}
+
+li {
+    font-size: 14px !important;
+    margin-bottom: 1vh;
+}
+
+.redes {
+
+
+    width: 50% !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-right: 2vw !important;
+    justify-content: center !important;
+    font-size: 20px !important;
+    column-gap: 5vw !important;
+    
+}
+
+.fa-brands,
+.fa-square-instagram {
+    font-size: 25px;
+    color: #000;
+}
+
+.cohorte {
+
+    width: 50% !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    column-gap: 3vh !important;
+
+}
+
+/* ---------------------Mensaje De no encontrar resultado en la busqueda--------------------------- */
+
+.ceroResult {
+    width: 100vw;
+    height: 45vh;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------------Formulario--------------------------------- */
+
+.formulario {
+    width: 100vw;
+    height: 70vh;
+}
+
+.row {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.validate {
+    width: 15vw;
+}
+
+.prefix {
+    color: #110d0dde !important;
+
+}
+
+.active {
+    color: #0a0206 !important;
+
+}
+
+label .fa-solid {
+    width: 2vw;
+}
+
+/* ---------------------------OK-Para cambiar los colores de las barras del formulario--------------------------------------- */
+.input-field input[type=text].validate:focus {
+    border-bottom: 1px solid #4104048c !important;
+    box-shadow: 0 1px 0 0 #4104048c !important;
+}
+
+input {
+
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(4, 3, 17, 0.596);
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-field input[type=tel].validate:focus {
+
+    border-bottom: 1px solid #4104048c  !important;
+    box-shadow: 0 1px 0 0 #4104048c  !important;
+}
+
+.input-field {
+    margin-top: 5vh !important;
+    margin-bottom: 5vh !important;
+}
+
+button {
+    width: 7vw;
+    height: 5vh;
+    margin-bottom:5vh;
+    box-shadow: 3px 3px 5px 3px#13141388;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4104048c;
+}
+
+
