@@ -38,12 +38,12 @@ header {
     position: relative;
     justify-content: center;
     align-items: center;
-    background:linear-gradient(#350505b2,#35050593,#35050588,#3505056b) ;
+    background: linear-gradient(#350505b2, #35050593, #35050588, #3505056b);
     margin-bottom: 5vh;
 }
 
 .busqued {
-    width: 25%;
+    width: 25vw;
     height: 4vh;
     position: absolute;
     border: none;
@@ -62,7 +62,7 @@ nav ul {
     width: 100%;
     position: absolute;
     height: 10vh;
-    background:linear-gradient(#350505,#350505de,#350505ce,#350505b2);
+    background: linear-gradient(#350505, #350505de, #350505ce, #350505b2);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -138,51 +138,53 @@ p {
 }
 
 /* -------Nuevo Diseño--------- */
-.inicio {
-    width: 90vw;
+#portada {
+    width: 100vw;
     height: 60vh;
-    /* border: 1px solid black;  */
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-size: cover;
-    margin-bottom: 5vh;
-    margin-left: 6vw;
-
-
-}
-
-.unoInicio {
-    width: 29%;
-    height: 100%;
-    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
-     /* border: 1px solid rgb(172, 28, 28);  */
-    background-image:url(https://firebasestorage.googleapis.com/v0/b/vinoteca-2dc45.appspot.com/o/Dise%C3%B1o%2FAccesoriosUno.webp?alt=media&token=0ef4d319-cc2b-450c-9755-05757f151c05) ; 
+    column-gap: 1vw;
+
+
+}
+
+
+.unoInicio {
+    width: 29%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgb(172, 28, 28);  */
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/vinoteca-2dc45.appspot.com/o/Dise%C3%B1o%2FAccesoriosUno.webp?alt=media&token=0ef4d319-cc2b-450c-9755-05757f151c05);
     background-size: cover;
-    margin-left: 63.7vw;
+
 }
 
 .dosInicio {
     width: 38%;
     height: 100%;
-    position: absolute;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    margin-left: 27vw;
     /* border: 1px solid rgb(78, 28, 172);  */
-    background-image:url(https://firebasestorage.googleapis.com/v0/b/vinoteca-2dc45.appspot.com/o/Dise%C3%B1o%2FDelicateses.webp?alt=media&token=c99e4314-2533-4a64-aa6c-b32339061ad8); 
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/vinoteca-2dc45.appspot.com/o/Dise%C3%B1o%2FDelicateses.webp?alt=media&token=c99e4314-2533-4a64-aa6c-b32339061ad8);
     background-size: cover;
 }
 
+.derecha {
+    width: 28%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/vinoteca-2dc45.appspot.com/o/Dise%C3%B1o%2FCervezaEspumante.jpg?alt=media&token=cf052688-1d78-41f3-97d6-5023329e842c);
+    background-size: cover;
+
+}
 
 .blancos,
 .tintos,
@@ -220,37 +222,28 @@ p {
     transform: scale(1.06);
 
 }
+
 .tintos:hover {
-cursor: pointer;
+    cursor: pointer;
 
 }
+
 .blancos:hover {
     cursor: pointer;
-    
+
 }
+
 .espumantes:hover {
 
     cursor: pointer;
 }
+
 .logoVino {
     width: 10vw;
     height: 10vh;
 }
 
-.derecha {
-    width: 28%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* border: 1px solid rgb(78, 28, 172);  */
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/vinoteca-2dc45.appspot.com/o/Dise%C3%B1o%2FCervezaEspumante.jpg?alt=media&token=cf052688-1d78-41f3-97d6-5023329e842c); 
-    background-size: cover;
 
-}
 
 /* -----Tarjetas----- */
 
@@ -271,9 +264,6 @@ cursor: pointer;
 
 .uno {
     display: contents;
-   
-    
-
 
 }
 
@@ -286,21 +276,21 @@ cursor: pointer;
     align-items: center;
     text-align: center;
     border-radius: 20px;
-    margin: 5px; 
-   
+    margin: 5px;
+
 }
 
 .cards:hover {
     -webkit-transform: scale(1.06);
     transform: scale(1.06);
-    box-shadow: 0px 0px 3px 3px #413239bd ;
+    box-shadow: 0px 0px 3px 3px #413239bd;
     border: 1px solid black;
-    
+
 }
 
 .cardUno {
     width: 18vw;
-   
+
     position: relative;
     display: flex;
     flex-direction: column;
@@ -344,7 +334,7 @@ cursor: pointer;
     height: 30vh;
     font-size: 14px;
     text-align: left;
-    
+
 
 
 }
@@ -374,13 +364,13 @@ cursor: pointer;
 }
 
 .but {
-width: 15vw;
-height: 4vh;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-text-align: center;
+    width: 15vw;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     box-shadow: -2px -2px 3px 3px rgba(10, 0, 1, 0.019);
     background-color: #000;
 }
@@ -388,10 +378,10 @@ text-align: center;
 
 .but a {
 
-   text-decoration: none;
-   color: #fdfbfb;
-   
-  
+    text-decoration: none;
+    color: #fdfbfb;
+
+
 
 }
 
@@ -413,30 +403,30 @@ footer {
 }
 
 h4 {
-    padding-bottom: 2vh !important;
+    padding-bottom: 2vh;
 }
 
 h3 {
-    font-size: 15px !important;
+    font-size: 15px;
 }
 
 li {
-    font-size: 14px !important;
+    font-size: 14px;
     margin-bottom: 1vh;
 }
 
 .redes {
 
 
-    width: 50% !important;
-    height: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-    padding-right: 2vw !important;
-    justify-content: center !important;
-    font-size: 20px !important;
-    column-gap: 5vw !important;
-    
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 2vw;
+    justify-content: center;
+    font-size: 20px;
+    column-gap: 5vw;
+
 }
 
 .fa-brands,
@@ -488,12 +478,12 @@ li {
 }
 
 .prefix {
-    color: #110d0dde !important;
+    color: #110d0dde;
 
 }
 
 .active {
-    color: #0a0206 !important;
+    color: #0a0206;
 
 }
 
@@ -503,8 +493,8 @@ label .fa-solid {
 
 /* ---------------------------OK-Para cambiar los colores de las barras del formulario--------------------------------------- */
 .input-field input[type=text].validate:focus {
-    border-bottom: 1px solid #4104048c !important;
-    box-shadow: 0 1px 0 0 #4104048c !important;
+    border-bottom: 1px solid #4104048c;
+    box-shadow: 0 1px 0 0 #4104048c;
 }
 
 input {
@@ -517,19 +507,19 @@ input {
 
 .input-field input[type=tel].validate:focus {
 
-    border-bottom: 1px solid #4104048c  !important;
-    box-shadow: 0 1px 0 0 #4104048c  !important;
+    border-bottom: 1px solid #4104048c;
+    box-shadow: 0 1px 0 0 #4104048c;
 }
 
 .input-field {
-    margin-top: 5vh !important;
-    margin-bottom: 5vh !important;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 button {
     width: 7vw;
     height: 5vh;
-    margin-bottom:5vh;
+    margin-bottom: 5vh;
     box-shadow: 3px 3px 5px 3px#13141388;
     display: flex;
     justify-content: center;
@@ -538,3 +528,304 @@ button {
 }
 
 
+/*--------------------------------------------- RESPONSIVE------------------------------------------------------ */
+@media screen and (min-width:1361px) {}
+
+@media screen and (min-width:640px) and (max-width:1279px) {
+
+    .espumantes,
+    .blancos,
+    .tintos {
+        font-size: 15px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .busqued {
+        font-size: 9px;
+    }
+
+    .title {
+        font-size: 10px;
+    }
+
+    .but {
+        height: 8vh;
+    }
+
+    .but a {
+        font-size: 10px;
+    }
+
+    .redes {
+        width: 80%;
+    }
+
+    h4 {
+        font-size: 12px;
+        font-style: bold;
+    }
+
+    li {
+        font-size: 10px;
+    }
+
+    button {
+        width: 10vw;
+    }
+
+    .row {
+        height: 80vh;
+    }
+
+    .input-field {
+        margin-top: 0vh;
+    }
+
+    .validate {
+        width: 20vw;
+    }
+
+
+}
+
+@media screen and (min-width:412px) and (max-width:915px) {
+    nav ul li {
+
+        font-size: 9px;
+    }
+
+    .busq {
+        height: 8vh;
+    }
+
+    .busqued {
+        width: 60vw;
+
+    }
+
+    #portada {
+
+        display: none;
+
+
+    }
+
+    #todosLosEventos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .cards {
+        width: 80vw;
+    }
+
+    .cardUno {
+        width: 100vw;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .price {
+        margin-top: 2vh;
+    }
+
+    .verMas {
+        margin-top: 5vh;
+        width: 100vw;
+    }
+
+    .but {
+        width: 40vw;
+        height: 5vh;
+
+    }
+
+    .img {
+        width: 80vw;
+    }
+
+    .but a {
+        font-size: 15px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .redes {
+        width: 95vw;
+    }
+
+    h4 {
+        font-size: 11px;
+    }
+
+    #portada {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+
+    }
+
+    .espumantes,
+    .blancos,
+    .tintos {
+        width: 50vw;
+    }
+
+    .derecha {
+        width: 100vw;
+        height: 100%;
+
+
+
+    }
+
+    .dosInicio {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .unoInicio {
+        width: 100vw;
+        height: 100%;
+    }
+
+    #todosLosEventos {
+        margin-top: 5vh;
+    }
+}
+
+@media screen and (max-width:390px) {
+
+    nav ul li {
+
+        font-size: 9px;
+    }
+
+    .busq {
+        height: 8vh;
+    }
+
+    .busqued {
+        width: 60vw;
+
+    }
+
+    #portada {
+
+        display: none;
+
+
+    }
+
+    #todosLosEventos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .cards {
+        width: 80vw;
+    }
+
+    .cardUno {
+        width: 100vw;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .price {
+        margin-top: 2vh;
+    }
+
+    .verMas {
+        margin-top: 5vh;
+        width: 100vw;
+    }
+
+    .but {
+        width: 40vw;
+        height: 5vh;
+
+    }
+
+    .img {
+        width: 80vw;
+    }
+
+    .but a {
+        font-size: 15px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .redes {
+        width: 95vw;
+    }
+
+    h4 {
+        font-size: 11px;
+    }
+
+    #portada {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+
+    }
+
+    .espumantes,
+    .blancos,
+    .tintos {
+        width: 50vw;
+    }
+
+    .derecha {
+        width: 100vw;
+        height: 100%;
+
+
+
+    }
+
+    .dosInicio {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .unoInicio {
+        width: 100vw;
+        height: 100%;
+    }
+
+    #todosLosEventos {
+        margin-top: 5vh;
+    }
+}

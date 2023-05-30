@@ -14,15 +14,15 @@ var vinosBlancos = [];
 var vinosTintos = [];
 var vinosEspumantes = [];
 var cervezas = [];
-var accesorios=[];
-var delicateses=[];
+var accesorios = [];
+var delicateses = [];
 
 let search = " ";
 
 async function getDB() {
     await vinosYalgoMas.get()
         .then((results) => {
-            console.log(results)
+            // console.log(results)
             const data = results.docs.map((doc) => ({
                 id: doc.id,
                 ...doc.data(),
@@ -31,7 +31,7 @@ async function getDB() {
 
             vinos = dataVinos
 
-            console.log("Toda data en la colección 'vinos' ", data);
+            //console.log("Toda data en la colección 'vinos' ", data);
 
             for (var i = 0; i < vinos.length; i++) {
                 if (vinos[i].Tipo === "Tinto") {
@@ -57,13 +57,13 @@ async function getDB() {
                     vinosEspumantes.push(vinos[i])
                 }
             }
-            console.log("Blancos", vinosBlancos)
-            console.log("Tintos", vinosTintos)
-            console.log("Espumantes", vinosEspumantes)
-            console.log("Todos los vinos", vinos)
-            console.log("Todas las Cervezas", cervezas)
-            console.log("Todas los Accesorios", accesorios)
-            console.log("Todas las Delicateses", delicateses)
+            // console.log("Blancos", vinosBlancos)
+            //console.log("Tintos", vinosTintos)
+            // console.log("Espumantes", vinosEspumantes)
+            // console.log("Todos los vinos", vinos)
+            // console.log("Todas las Cervezas", cervezas)
+            // console.log("Todas los Accesorios", accesorios)
+            // console.log("Todas las Delicateses", delicateses)
 
         })
 };
@@ -86,13 +86,13 @@ for (var i = 0; i < buttonNav.length; i++) { //Recorro todos los elementos con u
 
 
 var buttonCerveza = []
-console.log(buttonCerveza)
+//console.log(buttonCerveza)
 var buttonCer = document.getElementsByClassName("espumantes") //Capturo todos los elementos cuya clase es NAVLINK  document.getElementsByClassName. aca quedan todos los botones guardados
-console.log(buttonCer)
+//console.log(buttonCer)
 for (var i = 0; i < buttonCer.length; i++) { //Recorro todos los elementos con un for que tienen la clase NAVLINK y a medida que los recorre le agraga un escuchador de eventos
     const element = buttonCer[i]
     buttonCerveza.push(buttonCer[i].innerText)
-    console.log(buttonCerveza)
+    //console.log(buttonCerveza)
     //Escuchador de eventos escucha el click
     element.addEventListener("click", function (e) { //Cuando le doy click a los botones por la funcion le pido que me traiga los atributos o propiedades del boton en este caso extraigo el ID
         //document.getElementById("name").innerHTML(e.target.innerText)
@@ -101,13 +101,13 @@ for (var i = 0; i < buttonCer.length; i++) { //Recorro todos los elementos con u
 }
 
 var buttonDelicateses = []
-console.log(buttonDelicateses)
+//console.log(buttonDelicateses)
 var buttonDel = document.getElementsByClassName("blancos") //Capturo todos los elementos cuya clase es NAVLINK  document.getElementsByClassName. aca quedan todos los botones guardados
-console.log(buttonDel)
+//console.log(buttonDel)
 for (var i = 0; i < buttonDel.length; i++) { //Recorro todos los elementos con un for que tienen la clase NAVLINK y a medida que los recorre le agraga un escuchador de eventos
     const element = buttonDel[i]
     buttonDelicateses.push(buttonDel[i].innerText)
-    console.log(buttonDelicateses)
+    //console.log(buttonDelicateses)
     //Escuchador de eventos escucha el click
     element.addEventListener("click", function (e) { //Cuando le doy click a los botones por la funcion le pido que me traiga los atributos o propiedades del boton en este caso extraigo el ID
         //document.getElementById("name").innerHTML(e.target.innerText)
@@ -116,13 +116,13 @@ for (var i = 0; i < buttonDel.length; i++) { //Recorro todos los elementos con u
 }
 
 var buttonAccesorios = []
-console.log(buttonAccesorios)
+//console.log(buttonAccesorios)
 var buttonAcce = document.getElementsByClassName("tintos") //Capturo todos los elementos cuya clase es NAVLINK  document.getElementsByClassName. aca quedan todos los botones guardados
-console.log(buttonAcce)
+//console.log(buttonAcce)
 for (var i = 0; i < buttonAcce.length; i++) { //Recorro todos los elementos con un for que tienen la clase NAVLINK y a medida que los recorre le agraga un escuchador de eventos
     const element = buttonAcce[i]
     buttonAccesorios.push(buttonAcce[i].innerText)
-    console.log(buttonAccesorios)
+    //console.log(buttonAccesorios)
     //Escuchador de eventos escucha el click
     element.addEventListener("click", function (e) { //Cuando le doy click a los botones por la funcion le pido que me traiga los atributos o propiedades del boton en este caso extraigo el ID
         //document.getElementById("name").innerHTML(e.target.innerText)
@@ -133,16 +133,16 @@ function imprimir(id) {
     console.log(id)
     switch (id) {
         case "Vinos Tintos":
-            console.log("Estoy Vinos Tintos")
+            //console.log("Estoy Vinos Tintos")
             nombreEventos.style.display = "flex"
             formulario.style.display = "none"
             display(vinosTintos)
             searchContainer.style.display = "flex"
-            portada.style.display="none"
+            portada.style.display = "none"
 
             break;
         case "Vinos Blancos":
-            console.log("Estoy Vinos Blancos")
+            //console.log("Estoy Vinos Blancos")
             nombreEventos.style.display = "flex"
             formulario.style.display = "none"
             display(vinosBlancos)
@@ -150,7 +150,7 @@ function imprimir(id) {
 
             break;
         case "Vinos Espumantes":
-            console.log("Estoy Vinos Espumantes")
+            //console.log("Estoy Vinos Espumantes")
             nombreEventos.style.display = "flex"
             formulario.style.display = "none"
             display(vinosEspumantes)
@@ -158,45 +158,45 @@ function imprimir(id) {
 
 
             break;
-            case "Cervezas":
-                console.log("Estoy en cervezas")
-                display(cervezas)
-                portada.style.display="none"
+        case "Cervezas":
+            //console.log("Estoy en cervezas")
+            display(cervezas)
+            portada.style.display = "none"
             break;
-            
-            case "Delicateses":
-                console.log("Estoy en Delicateses")
-                display(delicateses)
-                portada.style.display="none"
 
-             
+        case "Delicateses":
+            //console.log("Estoy en Delicateses")
+            display(delicateses)
+            portada.style.display = "none"
+
+
             break;
-            case "Accesorios":
-                console.log("Estoy en Accesorios")
-                display(accesorios)
-                portada.style.display="none"
+        case "Accesorios":
+            //console.log("Estoy en Accesorios")
+            display(accesorios)
+            portada.style.display = "none"
             break;
 
         case "Contacto":
             imprimirFormulario()
             formulario.style.display = "flex"
-            console.log("Estoy Formulario")
+            //console.log("Estoy Formulario")
             let form = document.getElementById("formulario")
             form.addEventListener("submit", function (event) { actionForm(event) })
             nombreEventos.style.display = "none"
             searchContainer.style.display = "none"
-            portada.style.display="none"
+            portada.style.display = "none"
 
             break;
 
         default:
-            display(vinos)
-            portada.style.display="flex"
-            console.log("Estoy en Home")
+
+            portada.style.display = "flex"
+            // console.log("Estoy en Home")
             nombreEventos.style.display = "flex"
             formulario.style.display = "none"
             searchContainer.style.display = "flex"
-                       
+            todosLosVinos.style.display = "none"
             break;
 
 
@@ -226,30 +226,6 @@ function display(array) {
     document.getElementById("todosLosEventos").innerHTML = html;
 }
 
-//console.log(location.search)
-function rutas() {
-    var time = location.search.split("?time=");
-
-    //console.log(time[1])
-
-    switch (time[1]) {
-        case "Past":
-            imprimir("Past")
-            break;
-        case "Upcoming":
-            imprimir("Upcoming")
-            break;
-        case "Contact":
-            imprimir("Contact")
-            break;
-        case "Stats":
-            imprimir("Stats")
-            break;
-        default:
-            imprimir("Home")
-
-    }
-}
 
 
 function imprimirFormulario() {
@@ -288,27 +264,22 @@ function imprimirFormulario() {
 </div>
     `
 }
-function imprimirPortada() {
-    document.getElementById("portada").innerHTML =
-        `
-    `
 
-}
 
 
 // ---------Filtro por barra de busqueda---------------
 
 var inputSearch = document.getElementById("inputSearch")
 
-inputSearch.addEventListener("keyup", function(vino) { capturaVino(vino) })
+inputSearch.addEventListener("keyup", function (vino) { capturaVino(vino) })
 
 function capturaVino(vino) {
     var datoInput = vino.target.value
-    
+
     var search = datoInput.trim().toLowerCase()
- 
-   //console.log(datoInput)
-    var filtrado = vinos.filter(vino  => vino.Nombre.toLowerCase().includes(search))
+
+    //console.log(datoInput)
+    var filtrado = vinos.filter(vino => vino.Nombre.toLowerCase().includes(search))
     //console.log(filtrado)
     if (filtrado.length === 0) {
         nombreEventos.innerHTML = `<h1 class="ceroResult" >No se encontraron Vinos para tu busqueda </h1>`
@@ -319,8 +290,6 @@ function capturaVino(vino) {
 
 
 }
-
-
 
 // ---------------------Captura de datos del form-----------------
 
@@ -334,6 +303,6 @@ function actionForm(event) {
         Email: event.target[2].value,
         Sexo: event.target[3].value,
     }
-    console.log(formData)
+    // console.log(formData)
 }
 
